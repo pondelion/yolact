@@ -4,7 +4,7 @@ import os
 import math
 from collections import deque
 from pathlib import Path
-from ..yolact_layers.interpolate import InterpolateModule
+from yolact_layers.interpolate import InterpolateModule
 
 class MovingAverage():
     """ Keeps an average window of the specified number of items. """
