@@ -1,3 +1,5 @@
+import os
+
 from backbone import ResNetBackbone, VGGBackbone, ResNetBackboneGN, DarkNetBackbone
 from math import sqrt
 import torch
@@ -172,7 +174,18 @@ pascal_sbd_dataset = dataset_base.copy({
     'class_names': PASCAL_CLASSES,
 })
 
+sample_dataset = dataset_base.copy({
+    'name': 'Sample Dataset',
 
+    'train_images': os.path.join(os.path.basename(__file__), 'images', 'sample'),
+    'train_info':   os.path.join(os.path.basename(__file__), 'annotations', 'sample', 'test_datasets_20220526_1.json'),
+
+    'valid_images': os.path.join(os.path.basename(__file__), 'images', 'sample'),
+    'valid_info':   os.path.join(os.path.basename(__file__), 'annotations', 'sample', 'test_datasets_20220526_1.json'),
+
+    'has_gt': True,
+    'class_names': ('cat', 'dog')
+})
 
 
 
@@ -766,6 +779,20 @@ yolact_resnet50_pascal_config = yolact_resnet50_config.copy({
         'use_square_anchors': False,
     })
 })
+
+yolact_resnet50_sampledataset_config = yolact_resnet50_config.copy({
+    'name': 'yolact_resnet50_sampledataset',
+
+    # Dataset stuff
+    'dataset': sample_dataset,
+    'num_classes': len(sample_dataset.class_names) + 1,
+
+    'max_iter': 30,
+
+    # Image Size
+    # 'max_size': 640,
+})
+
 
 # ----------------------- YOLACT++ CONFIGS ----------------------- #
 

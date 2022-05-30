@@ -1,0 +1,160 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "dataset_id": 2,
+            "category_ids": [
+                1
+            ],
+            "path": "/datasets/test_datasets_20220526_1/zidane.jpg",
+            "width": 1280,
+            "height": 720,
+            "file_name": "zidane.jpg",
+            "annotated": true,
+            "annotating": [],
+            "num_annotations": 1,
+            "metadata": {},
+            "milliseconds": 5471,
+            "events": [
+                {
+                    "_cls": "SessionEvent",
+                    "user": "user1",
+                    "milliseconds": 5471,
+                    "tools_used": []
+                }
+            ],
+            "regenerate_thumbnail": false,
+            "is_modified": false
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "cat",
+            "supercategory": "",
+            "color": "#c11010",
+            "metadata": {},
+            "creator": "user1",
+            "keypoint_colors": []
+        },
+        {
+            "id": 2,
+            "name": "dog",
+            "supercategory": "",
+            "color": "#1b20ac",
+            "metadata": {},
+            "creator": "user1",
+            "keypoint_colors": []
+        }
+    ],
+    "annotations": [
+        {
+            "id": 1,
+            "image_id": 1,
+            "category_id": 1,
+            "dataset_id": 2,
+            "segmentation": [
+                [
+                    490.2,
+                    238.8,
+                    542.1,
+                    186.9,
+                    627.8,
+                    213.4,
+                    669.1,
+                    274.8,
+                    658.5,
+                    387,
+                    597.1,
+                    459,
+                    553.7,
+                    445.2,
+                    508.2,
+                    381.7,
+                    475.4,
+                    287.5,
+                    489.1,
+                    236.6
+                ]
+            ],
+            "area": 36766,
+            "bbox": [
+                475,
+                187,
+                194,
+                272
+            ],
+            "iscrowd": false,
+            "isbbox": false,
+            "creator": "user1",
+            "width": 1280,
+            "height": 720,
+            "color": "#bb02a7",
+            "metadata": {},
+            "milliseconds": 88193,
+            "events": [
+                {
+                    "_cls": "SessionEvent",
+                    "created_at": {
+                        "$date": 1653551569017
+                    },
+                    "user": "user1",
+                    "milliseconds": 88193,
+                    "tools_used": [
+                        "Select",
+                        "Polygon",
+                        "Select"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "image_id": 1,
+            "category_id": 1,
+            "dataset_id": 2,
+            "segmentation": [
+                [
+                    898.9,
+                    88.4,
+                    947.6,
+                    37.6,
+                    1039.7,
+                    53.5,
+                    1061.9,
+                    79.9,
+                    1064.1,
+                    167.8,
+                    1047.1,
+                    249.4,
+                    998.4,
+                    301.2,
+                    930.6,
+                    265.2,
+                    893.6,
+                    196.4,
+                    891.5,
+                    126.5,
+                    899.9,
+                    88.4
+                ]
+            ],
+            "area": 35200,
+            "bbox": [
+                892,
+                38,
+                172,
+                263
+            ],
+            "iscrowd": false,
+            "isbbox": false,
+            "creator": "user1",
+            "width": 1280,
+            "height": 720,
+            "color": "#33d761",
+            "metadata": {},
+            "milliseconds": 0,
+            "events": []
+        }
+    ]
+}
