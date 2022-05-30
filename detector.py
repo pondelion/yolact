@@ -61,4 +61,5 @@ class Detector:
             preds, w, h, crop_masks=False, score_threshold=thresh
         )
         sorted_indices = scores.argsort(0, descending=True)[:self._TOK_K]
-        return _cdn(classes), _cdn(scores), _cdn(boxes), _cdn(masks)
+        si = sorted_indices
+        return _cdn(classes[si]), _cdn(scores[si]), _cdn(boxes[si]), _cdn(masks[si])
